@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JorahMovies</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>  
+ <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<style>
+  .jumbotron{
+background-color:gray;
+
+  }
+</style>
+  </head>
+
+  <body>
+  
+
+
+    <%= yield %>
+     <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  </body>
+</html>
